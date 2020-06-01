@@ -1,0 +1,16 @@
+The best Fitness Value was: 0.836292
+The final iteration was: 24016
+The Species coefficients are: 
+m1Y00 = -0.213498
+m1Y01 = -0.0122051
+m1Y02 = 0.451556
+m1Y03 = 0.169653
+m1Y04 = -0.477502
+m1Y05 = -0.110447
+m1Y06 = 0.333044
+m1Y07 = 0.0743827
+m1Y08 = -0.333044
+m1Y09 = -0.0149099
+m1Y010 = 0.334146
+m1Y011 = 0.150585
+m1Y012 = -0.344899

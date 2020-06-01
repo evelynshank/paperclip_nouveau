@@ -1,0 +1,27 @@
+Evolutionary Algorithm Used:
+
+Every generation, all 100 species are tested and assigned a fitness score.
+
+Algorithm 1: (somewhat similar to Reproduction in Kai's code) top 10 scoring species move unaltered to the next generation.
+
+Algorithm 2: (Akin to Point Mutation) 10 randomly chosen species have their fitness scores compared (a tournament), with the best species having 10 offspring. Each offspring has a random position in the parent species's array chosen and mutated to another random number. 
+For example, if the parent is A, and the randomly chosen positions are 7,5,2: 
+A = {5,(5),9,4,(7),2,(5),7,1}
+The children B,C, and D with random numbers 3,6, and 9 are:
+B = {5,5,9,4,7,2,(3),7,1}
+C = {5,5,9,4,(6),2,5,7,1}
+D = {5,(9),9,4,7,2,5,7,1}
+This is algorithm is done 3 times, for a total of 30 offspring (from 3 parents).
+
+Algorithm 3: (Akin to Crossover) 20 random species are chosen, two separate tournaments are run with 10 species each, and the two best species will have 5 pairs of 2 offspring: a randomly chosen position on the parent species's arrays have their values switched to produce a pair of offspring (one for each combination). 
+For example, if the parents are A and B, and the randomly chosen position is 7: 
+A = {5,5,9,4,7,2,(5),7,1}
+B = {4,6,2,4,9,2,(1),5,3}
+The children C and D are:
+C = {5,5,9,4,7,2,(1),7,1}
+D = {4,6,2,4,9,2,(5),5,3}
+This algorithm is done 5 times, for a total of 50 offspring (from 10 parents).
+
+Algorithm 4: (My own method to avoid local maximums) This is similar to when immigrated species join a population and bring their own unique genetics to the mix. Simply, 10 species are generated with completely random, normalized values. These are put in the bottom 10 of the next population.
+
+To summarize, 10% are from algorithm 1, 30% from algorithm 2, 50% are from algorithm 3, and 10% are from algorithm 4 (this is done in the spirit of the percentages from Kai's code)

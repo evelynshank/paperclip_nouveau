@@ -1,0 +1,2 @@
+Average Deviation (Delta R / N): 0
+Chi^2: 26.7041
